@@ -1,13 +1,12 @@
 import React from 'react';
-import phone from "../assets/iphone.png";
 
-const Home = () => {
-    const val="Iphone"
+const Home = (props) => {
     return (
         <div className='card'> 
-            <img src={phone} alt="Iphone"/>
-            <h1>{val}</h1>
-            <p>This is Iphone 13 pro</p>
+            <img src={props.img} alt=""/>
+            <h1>{props.name}</h1>
+            <p>{props.desc}</p>
+            <p>{props.price}</p>
         </div>
     );
 };
