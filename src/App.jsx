@@ -5,6 +5,7 @@ import lap from "./assets/laptop.png";
 import ipad from "./assets/tab.png";
 import CompA from './components/CompA';
 import CompB from './components/CompB';
+import CompC from './components/CompC';
 
 const App = () => {
   let a = 10;
@@ -17,7 +18,8 @@ const App = () => {
           <Home name="Ipad" price="$788" desc="This is Apple Ipad" img={ipad} /> */}
 
         {/* <CompA a={a} /> */}
-        <CompB obj={obj} />
+        {/* <CompB obj={obj} /> */}
+        <CompC arr={arr}/>
     </div>
   );
 };
