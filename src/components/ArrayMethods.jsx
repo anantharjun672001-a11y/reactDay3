@@ -20,6 +20,12 @@ const ArrayMethods = () => {
         
     }
 
+    const removeUser=()=>{
+        const rem =users.pop();   //pop
+        console.log("remove User",rem);  //console
+        users.forEach((ele)=>console.log(ele)) //forEach
+    }
+
     return (
         <div>
             <h1>Array</h1>
@@ -35,7 +41,7 @@ const ArrayMethods = () => {
             }
             </ul>
             <button onClick={addUser}>Add</button>
-            <button>Remove</button>
+            <button onClick={removeUser}>Remove</button>
             <button>Splice</button>
             <button>Slice</button>
         </div>
