@@ -26,6 +26,21 @@ const ArrayMethods = () => {
         users.forEach((ele)=>console.log(ele)) //forEach
     }
 
+    const sliceUser=()=>{
+        const sli = users.slice(1,4);
+        console.log(sli);
+        
+    }
+    
+    const spliceUser = () =>{
+         //splice
+        const spli = users.splice(3,2,"raja","rani")
+        //splice console
+        console.log(spli);
+        //users console
+        console.log(users);
+    }
+
     return (
         <div>
             <h1>Array</h1>
@@ -42,8 +57,8 @@ const ArrayMethods = () => {
             </ul>
             <button onClick={addUser}>Add</button>
             <button onClick={removeUser}>Remove</button>
-            <button>Splice</button>
-            <button>Slice</button>
+            <button onClick={sliceUser}>Slice</button>
+            <button onClick={spliceUser}>Splice</button>
         </div>
     );
 };
